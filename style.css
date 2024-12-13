@@ -1,0 +1,525 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+/* HEADER SECTION */
+
+.header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 10%;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 10px black;
+}
+.header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(10px);
+    height: 100%;
+    z-index: -1;
+}
+.logo{
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 30px;
+    font-style: italic;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+}
+nav a{
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 1.5rem;
+    padding: 7px 10px;
+    border-radius: 20px;
+    transition: 0.6s;
+}
+nav a.active,nav a:hover{
+    color: #f80000;
+    box-shadow: 0px 0px 10px #000000;
+}
+.icons{
+    right: 5%;
+    position: absolute;
+    font-size: 2.3rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+/* HOMEPAGE SECTION */
+
+.home{
+    height: 100vh;
+    width: 100%;
+    background-image: url(image/Logo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    overflow: hidden;
+}
+
+
+/* PROJECT SECTION */
+.outside-container{
+    width: 100%;
+    height: 100vh;
+    background: #000000;
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
+    padding-top: 9%;
+    padding: 10%;
+}
+.project-h1{
+    text-align: center;
+    padding-bottom: 1%;
+    color: #f80000;
+    font-size: 400%;
+    margin-top: -5%;
+    margin-bottom: 2%;
+}
+.containers{
+    max-width: 400px;
+    margin: 0 auto;
+    border: solid 2px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: gray;
+    box-shadow: 0px 0px 30px rgb(187, 50, 16);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 2%;
+}
+.inside-container{
+    border: solid 2px;
+    border-radius: 20px;
+    margin: auto;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #0056b3;
+}
+.inside-container button{
+    color: red;
+}
+
+/* Calculator styles */
+.calculator {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+.calculator .calculator-content ::placeholder{
+    color: #000000;
+}
+
+.calculator-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    width: 300px;
+    margin: auto;
+}
+input[placeholder]{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+}
+
+.close {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    width: 80%;
+}
+
+#result {
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.last{
+    padding-left: 65px;
+    width: 85%;
+    border-bottom: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    font-style: italic;
+    margin-bottom: -10%;
+}
+.project ::placeholder{
+    color: #f2f2f2;
+}
+
+/* ABOUT SECTION */
+
+.about{
+    width: 100%;
+    height: 100vh;
+    background: #000000;
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
+}
+.heading h1{
+    padding-top: 100px;
+    text-align: center;
+}
+.about-h1{
+    color: #f80000;
+    font-size: 400%;
+}
+.containerr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 65px auto;
+}
+.content p{
+    font-size: 20px;
+    line-height: 1.5rem;
+    margin-bottom: 40px;
+    color: #f2f2f2;
+}
+.content span{
+    font-weight: bold;
+    font-style: oblique;
+    color: #f80000;
+}
+.content{
+    flex: 1;
+    width: 500px;
+    margin: 0px 25px;
+}
+.image{
+    flex: 1;
+    width: 500px;
+    margin: auto;
+}
+.image img{
+    width: 70%;
+    border-radius: 10px;
+    height: 400px;
+}
+/* CONTACT SECTION */
+
+.contact{
+    height: 100vh;
+    width: 100%;
+    background: #000000;
+    position: relative;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 3;
+}
+.contact p{
+    color: white;
+}
+.contact h3, h2{
+    color: #f80000;
+}
+.contact h2{
+    text-align: center;
+}
+.contact-h1{
+    color: #f80000;
+    font-size: 200%;
+}
+.contact img{
+    width: 20px;
+}
+.contact .contents{
+    text-align: center;
+}
+.contact .contents {
+    padding-top: 40px;
+    font-size: 30px;
+}
+.contact .contents p{
+    padding-top: 10px;
+    font-size: 18px;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .contactInfo .box .icon{
+    height: 50px;
+    width: 50px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.container .contactInfo .box a{
+    text-decoration: none;
+    color: #000000;
+}
+.container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+    font-weight: 300;
+}
+.social img{
+    width: 50px;
+    margin-left: 30px;
+    transition: 1s;
+    border-radius: 50%;  
+}
+.social img:hover{
+    box-shadow: 0px 0px 10px #000000;
+}
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background: gray;
+    border-radius: 10px;
+}
+.contactForm h2{
+    font-size: 30px;
+    font-weight: 500;
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input, textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    font-family: arial;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #000000;
+    outline: none;
+    resize: none;
+    background: transparent;
+}
+.contactForm .inputBox input[type="submit"]{
+    width: 100%;
+    color: #000000;
+    background: red;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.contactForm .inputBox input[placeholder="Full Name"], input[placeholder="Email"], textarea[placeholder="Type your Message..."]{
+    cursor: pointer;
+}
+
+.inputBox ::placeholder{
+    color: #f2f2f2;
+}
+
+.contactForm .inputBox input[type="submit"]:hover{
+    box-shadow: 0px 0px 10px #000000;
+}
+
+
+/* MEDIA SECTION */
+
+@media (max-width: 1200px){
+    .project{
+        height: 100%;
+    }
+    .outside-container{
+        padding: 10%;
+        padding-top: 20%;
+    }
+    .last{
+        padding-left: 45px;
+        width: 95%;
+        border-bottom: none;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        background-color: transparent;
+        font-style: italic;
+        margin-bottom: -10%;
+    }
+}
+@media (max-width: 1075px){
+
+    .project{
+        height: 100%;
+    }
+    .about{
+        height: 100%;
+    }
+}
+
+@media (max-width: 991px){
+    .contact{
+        height: 100%;
+        padding: 50px;
+    }
+    .container{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .container .contactInfo{
+        margin-bottom: 40px;
+    }
+    .container .contactInfo,
+    .contactForm{
+        width: 100%;
+    }
+    .contactInfo{
+        justify-content: center;
+        align-items: center;
+    }
+    .social img{
+        transition: 0.5s;
+        border-radius: 50%;
+    }
+    .social img:hover{
+        box-shadow: 0px 0px 10px #000000;
+    }
+
+    .icons{
+        display: inline-flex;
+    }
+    #check:checked ~ .icons #menu-icon{
+        display: none;
+    }
+    #check:checked ~ .icons #close-icon{
+        display: block;
+    }
+    .icons #close-icon{
+        display: none ;
+    }
+    nav{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, .1);
+        backdrop-filter: blur(50px);
+        top: 76px;
+        right: -100%;
+        transition: 0.5s;
+        text-align: center;
+    }
+    nav a{
+        display: block;
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+        margin: 50px 0;
+        line-height: 30px;
+        transition: 0.5s;
+    }
+    nav a:hover{
+        box-shadow: none;
+        color: #000000;
+    }
+    #check:checked ~ nav{
+        right: 0;
+    }
+    .home h1{
+        font-size: 60px;
+        text-align: center;
+    }
+    .about{
+        margin: 0px;
+    }
+    .containerr{
+        width: 100%;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px 40px;
+    }
+    .content{
+        width: 100%;
+        margin: 35px 0px;
+    }
+
+    .content p{
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    .image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    } 
+}

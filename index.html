@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="image/Logo.jpg">
+    <title>Portfolio-Project</title>
+</head>
+<body>
+    <header class="header">
+        <a href="" class="logo ">My Portfolio</a>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <img src="image/menu.png" id="menu-icon">
+            <img src="image/close.png" id="close-icon">
+        </label>
+        <nav>            
+            <a href="#home">Home</a>
+            <a href="#project">Project</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>         
+        </nav>
+    </header>
+    <!--Homee section start-->
+    <div class="home" id="home">
+                  
+    </div>
+    <!--Project section start-->
+<div class="outside-container" id="project">
+    <h1 class="project-h1">Project</h1>
+<div class="containers">
+    <div class="project" >
+        <div class="inside-container">
+            <h1>Calculator</h1>
+            <button class="openCalculator" data-target="triangleCalc">Triangle Area</button>
+            <br>
+            <br>
+            <button class="openCalculator" data-target="averageCalc">Average of 5 Numbers</button>
+            <br>
+            <br>
+            <button class="openCalculator" data-target="celsiusCalc">Convert Celsius to Fahrenheit</button>
+            <br>
+            <br>
+            <button class="openCalculator" data-target="displayCalc">Display Dynamic Input</button>
+            <br>
+            <br>
+
+        <!-- Triangle Area -->
+            <div id="triangleCalc" class="calculator">
+                <div class="calculator-content">
+                    <span class="close">&times;</span>
+                    <h2>Calculate Triangle Area</h2>
+                    <label for="base">Base (b):</label>
+                    <input type="number" id="base" placeholder="Enter base"><br><br>
+                    <label for="height">Height (h):</label>
+                    <input type="number" id="height" placeholder="Enter height"><br><br>
+                    <button id="calculateArea">Calculate Area</button>
+                    <p id="triangleResult"></p>
+                    </div>
+                </div>
+
+        <!-- Average -->
+                <div id="averageCalc" class="calculator">
+                    <div class="calculator-content">
+                        <span class="close">&times;</span>
+                    <h2>Calculate Average of 5 Numbers</h2>
+                    <input type="number" id="num1" placeholder="Enter number 1"><br><br>
+                    <input type="number" id="num2" placeholder="Enter number 2"><br><br>
+                    <input type="number" id="num3" placeholder="Enter number 3"><br><br>
+                    <input type="number" id="num4" placeholder="Enter number 4"><br><br>
+                    <input type="number" id="num5" placeholder="Enter number 5"><br><br>
+                    <button id="calculateAverage">Calculate Average</button>
+                    <p id="averageResult"></p>
+                </div>
+            </div>
+
+        <!-- Celsius to Fahrenheit -->
+            <div id="celsiusCalc" class="calculator">
+                <div class="calculator-content">
+                    <span class="close">&times;</span>
+                    <h2>Convert Celsius to Fahrenheit</h2>
+                    <input type="number" id="celsius" placeholder="Enter Celsius"><br><br>
+                    <button id="convertCelsius">Convert</button>
+                    <p id="celsiusResult"></p>
+                </div>
+            </div>
+
+        <!-- Dynamic Display -->
+            <div id="displayCalc" class="calculator">
+                <div class="calculator-content">
+                    <span class="close">&times;</span>
+                    <h2>Display Dynamic Input</h2>
+                    <input type="number" id="dynamicInput" placeholder="Enter a number"><br><br>
+                    <button id="displayNumber">Display</button>
+                    <p id="displayResult"></p>
+                </div>
+            </div>
+            </div>
+            <br>
+        <input type="text" placeholder="Created by: Khim D. Arradaza" class="last" disabled>
+    </div>
+</div>
+</div>
+
+    <script src="scripts.js"></script>
+
+    <!--Aboutt section start-->
+    <main class="about" id="about">
+        <div class="heading">
+            <h1 class="about-h1">About Me</h1>
+        </div>
+        <div class="containerr">
+            <div class="content">
+                <p>Hello, i'm <span>Khim D. Arradaza</span> a second-year IT student, still figuring out which areas of 
+                    tech i want to specialize in. Right now, i'm focusing on learning the 
+                    basics of programming, databases, and everything that makes the tech 
+                    world tick. I'm excited to dive deeper into more complex topics as i 
+                    go and see where this journey takes me!</p>
+            </div>
+            <div class="image">
+                <img src="image/me2.jpg">
+            </div>
+        </div>
+    </main>
+    <!--Contact section start-->
+    <section class="contact"  id="contact">
+        <div class="contents">
+            <h1 class="contact-h1">Contact Me</h1>
+            <p>Feel free to reach out if you need anything!</p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><img src="image/location-pin.png"></div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>Brgy. San Vicente, <br>Ormoc City, <br>Leyte 6541</p>
+                        </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><img src="image/phone-call.png"></div>
+                        <div class="text">
+                            <h3>Phone Number</h3>
+                            <p>09942364856</p>
+                        </div>                    
+                </div>
+                <div class="box">
+                    <div class="icon"><img src="image/gmail.png"></div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>khimarradaza123@gmail.com</p>
+                        </div>                   
+                </div>
+                <div class="social">
+                    <a href="https://www.facebook.com/khim.arradaza" target="_blank"><img src="image/facebook.png"></a>
+                    <a href="https://www.tiktok.com/@khim.arradaza" target="_blank"><img src="image/tik-tok.png"></a>            
+                </div>
+            </div>
+            <div class="contactForm">
+                <form name="submit-to-google-sheet">
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="Name" placeholder="Full Name" required>
+                    </div>
+                    <div class="inputBox">
+                        <input type="email" name="Email" placeholder="Email" required>
+                    </div>
+                    <div class="inputBox">
+                        <textarea name="Message" placeholder="Type your Message..."></textarea>
+                    </div>
+                   <div class="inputBox">
+                    <input id="msg" type="submit" value="Send" onclick="alert('\nThank you!\n\nMessage Successfully Sent!')">
+                    </div>
+                </form>
+
+            </div>
+        </div> 
+    </section>  
+    
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxuaSDmdG4YLstK3xtn7mndHx2EuLERwEKZLFUCqcdyTuYXTcoXG6XmLeMMk7Vn331JMw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = ""
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 3000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    
+</body>
+</html>
