@@ -21,7 +21,7 @@ window.onclick = function(event) {
 document.getElementById('calculateArea').addEventListener('click', function() {
     const base = parseFloat(document.getElementById('base').value);
     const height = parseFloat(document.getElementById('height').value);
-
+    
     if (isNaN(base) || isNaN(height) || base <= 0 || height <= 0) {
         document.getElementById('triangleResult').textContent = "Please enter valid positive numbers!";
     } else {
